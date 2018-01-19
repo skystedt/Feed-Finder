@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
   "name": "Feed Finder",
-  "version": "0.1.0",
-  "version_name": "0.1.0 beta",
+  "version": "0.1.1",
+  "version_name": "0.1.1 beta",
   "description": "Highlights when a feed is found on a website and allows you to simply add it to your favorite feed reader/aggregator",
   "icons": {
     "16": "icons/feed-icon-16x16.png",
