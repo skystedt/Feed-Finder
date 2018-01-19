@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Youtube - User",
+        "url": "^(.*)youtube\\.com\\/user\\/([^?]+).*$",
+        "replace": "$1youtube.com/feeds/videos.xml?user=$2"
+    }, {
+        "title": "Youtube - Channel",
+        "url": "^(.*)youtube\\.com\\/channel\\/([^?]+).*$",
+        "replace": "$1youtube.com/feeds/videos.xml?channel_id=$2"
+    }, {
+        "title": "Youtube - Playlist",
+        "url": "^(.*)youtube\\.com\\/watch.*?(?:[?&]list=([^&]+)).*$",
+        "replace": "$1youtube.com/feeds/videos.xml?playlist_id=$2"
+    }, {
+        "title": "Wikipedia - Article History",
+        "url": "^(.*)wikipedia\\.org\\/(?:(?:wiki\\/)|(?:w\\/index\\.php.*?(?:[?&]title=)))([^?&#]+).*$",
+        "replace": "$1wikipedia.org/wiki/$2?feed=atom&action=history"
+    }
+]

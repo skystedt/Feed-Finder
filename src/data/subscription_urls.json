@@ -1,0 +1,10 @@
+[
+    {
+        "title": "New Tab",
+        "url": "$1",
+        "encoding": false
+    }, {
+        "title": "Feedly",
+        "url": "https://feedly.com/#subscription/feed/$1"
+    }
+]

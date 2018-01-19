@@ -1,0 +1,41 @@
+{
+  "manifest_version": 2,
+  "name": "Feed Finder",
+  "version": "0.1.0",
+  "version_name": "0.1.0 beta",
+  "description": "Highlights when a feed is found on a website and allows you to simply add it to your favorite feed reader/aggregator",
+  "icons": {
+    "16": "icons/feed-icon-16x16.png",
+    "19": "icons/feed-icon-19x19.png",
+    "32": "icons/feed-icon-32x32.png",
+    "38": "icons/feed-icon-38x38.png",
+    "48": "icons/feed-icon-48x48.png",
+    "128": "icons/feed-icon-128x128.png"
+  },
+  
+  "background": {
+    "persistent": false,
+    "scripts": [ "js/utils.js", "js/background.js" ]
+  },
+  "content_scripts": [
+    {
+      "js": [ "js/utils.js", "js/content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+    }
+  ],
+  "page_action": {
+    "default_icon": {
+      "19": "icons/feed-icon-19x19.png",
+      "38": "icons/feed-icon-38x38.png"
+    },
+    "default_popup": "popup.html",
+    "default_title": "Subscribe to feed"
+  },
+  "web_accessible_resources": [
+    "data/known_feeds.json",
+    "data/subscription_urls.json"
+  ],
+  
+  "permissions": [ "storage", "http://*/*", "https://*/*" ]
+}
