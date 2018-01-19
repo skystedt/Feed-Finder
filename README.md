@@ -12,6 +12,6 @@ Chrome extension for highlighting when a feed is found on a website and allowing
 
 ### Links
 
-* Chrome Web Store
-* Changelog
+* [Chrome Web Store](https://chrome.google.com/webstore/detail/feed-finder/hhfdghggdldcgijpnlaachhpjgldemld)
+* [Changelog](https://github.com/skystedt/Feed-Finder/releases)
 * Uses icons from [Feed Icons](http://www.feedicons.com)
